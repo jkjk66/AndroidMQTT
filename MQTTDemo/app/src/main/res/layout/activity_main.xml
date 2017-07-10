@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.mqtt.demo.MainActivity">
+
+<Button
+    android:id="@+id/start"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="start service"
+    tools:layout_editor_absoluteY="0dp"
+    tools:layout_editor_absoluteX="0dp"
+    android:layout_marginTop="97dp"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true" />
+
+<Button
+    android:gravity="center"
+    android:id="@+id/stop"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="stop service"
+    android:layout_below="@+id/start"
+    android:layout_alignStart="@+id/start"
+    android:layout_marginTop="17dp"
+    android:layout_alignEnd="@+id/start"
+    android:layout_alignLeft="@+id/start"
+    android:layout_alignRight="@+id/start"/>
+
+<Button
+    android:gravity="center"
+    android:id="@+id/connect"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="do connect"
+    android:layout_marginTop="17dp"
+    android:layout_below="@+id/stop"
+    android:layout_alignStart="@+id/stop"
+    android:layout_alignEnd="@+id/stop"
+    android:layout_alignLeft="@+id/stop"
+    android:layout_alignRight="@+id/stop"/>
+
+<Button
+    android:gravity="center"
+    android:id="@+id/disconnect"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="do disconnect"
+    android:layout_marginTop="17dp"
+    android:layout_below="@+id/connect"
+    android:layout_alignStart="@+id/connect"
+    android:layout_alignLeft="@+id/connect"/>
+
+<Button
+    android:gravity="center"
+    android:id="@+id/send"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="send message"
+    android:layout_marginTop="17dp"
+    android:layout_below="@+id/disconnect"
+    android:layout_alignStart="@+id/disconnect"
+    android:layout_alignEnd="@+id/disconnect"
+    android:layout_alignLeft="@+id/disconnect"
+    android:layout_alignRight="@+id/disconnect"/>
+
+</RelativeLayout>
